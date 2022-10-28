@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qUVcrNENndjq9Vx1NLCmFaXK3qk+6mt71mpIO3hX77t22S7LhNw2XiwkVzW7Jvdr74iiCbe8O0BifCPYyFNahA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\thboulan\\Documents\\EntityFramework\\SimpleSQLite\\SQliteSimple\\SQliteSimple.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thboulan\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\thboulan\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
+  ],
+  "logs": []
+}

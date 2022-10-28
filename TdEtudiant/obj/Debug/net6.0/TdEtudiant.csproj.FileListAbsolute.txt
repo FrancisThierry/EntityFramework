@@ -1,0 +1,15 @@
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.csproj.AssemblyReference.cache
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.AssemblyInfoInputs.cache
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.AssemblyInfo.cs
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.csproj.CoreCompileInputs.cache
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\bin\Debug\net6.0\TdEtudiant.exe
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\bin\Debug\net6.0\TdEtudiant.deps.json
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\bin\Debug\net6.0\TdEtudiant.runtimeconfig.json
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\bin\Debug\net6.0\TdEtudiant.dll
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\bin\Debug\net6.0\TdEtudiant.pdb
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.dll
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\refint\TdEtudiant.dll
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.pdb
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\TdEtudiant.genruntimeconfig.cache
+C:\Users\thboulan\Documents\EntityFramework\TdEtudiant\obj\Debug\net6.0\ref\TdEtudiant.dll
