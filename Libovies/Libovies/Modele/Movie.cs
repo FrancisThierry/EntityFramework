@@ -12,5 +12,7 @@ namespace Libovies.Modele
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime DateCreation { get; set; }
+
+        public Director Director { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace Libovies.Modele
     {
         string DbPath = @"C:\projets\TDEF\databaseTD1.db";
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Director> Directors { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
