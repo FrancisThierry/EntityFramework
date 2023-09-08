@@ -3,6 +3,7 @@ using System;
 using Libovies.Modele;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Libovies.Migrations
 {
     [DbContext(typeof(DbContextMovie))]
-    partial class DbContextMovieModelSnapshot : ModelSnapshot
+    [Migration("20230908124309_addActors")]
+    partial class addActors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.10");
@@ -23,16 +26,11 @@ namespace Libovies.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("MovieId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("MovieId");
 
                     b.ToTable("Actors");
                 });
@@ -62,21 +60,6 @@ namespace Libovies.Migrations
                     b.ToTable("Directors");
                 });
 
-            modelBuilder.Entity("Libovies.Modele.Distributor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Distributors");
-                });
-
             modelBuilder.Entity("Libovies.Modele.Movie", b =>
                 {
                     b.Property<int>("Id")
@@ -99,30 +82,6 @@ namespace Libovies.Migrations
                     b.ToTable("Movies");
                 });
 
-            modelBuilder.Entity("Libovies.Modele.MovieDistributor", b =>
-                {
-                    b.Property<int>("MovieId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("DistributorId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("MovieId", "DistributorId");
-
-                    b.HasIndex("DistributorId");
-
-                    b.ToTable("MovieDistributors");
-                });
-
-            modelBuilder.Entity("Libovies.Modele.Actor", b =>
-                {
-                    b.HasOne("Libovies.Modele.Movie", null)
-                        .WithMany("Actors")
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Libovies.Modele.Director", b =>
                 {
                     b.HasOne("Libovies.Modele.Movie", "Movie")
@@ -134,29 +93,8 @@ namespace Libovies.Migrations
                     b.Navigation("Movie");
                 });
 
-            modelBuilder.Entity("Libovies.Modele.MovieDistributor", b =>
-                {
-                    b.HasOne("Libovies.Modele.Distributor", "Distributor")
-                        .WithMany()
-                        .HasForeignKey("DistributorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Libovies.Modele.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Distributor");
-
-                    b.Navigation("Movie");
-                });
-
             modelBuilder.Entity("Libovies.Modele.Movie", b =>
                 {
-                    b.Navigation("Actors");
-
                     b.Navigation("Director");
                 });
 #pragma warning restore 612, 618

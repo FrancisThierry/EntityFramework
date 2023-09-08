@@ -13,6 +13,12 @@ namespace Libovies.Modele
         public string Description { get; set; }
         public DateTime DateCreation { get; set; }
 
-        public Director Director { get; set; }
+        public Director? Director { get; set; }
+
+        public ICollection<Actor>? Actors { get; set;}
+
+        public ICollection<MovieDistributor> MovieDistributors { get; set; }
+
+
     }
 }
